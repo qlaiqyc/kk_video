@@ -1,0 +1,54 @@
+{
+  "name": "wx-server",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "egg": {
+    "declarations": true
+  },
+  "dependencies": {
+    "egg": "^2.15.1",
+ "cheerio": "^1.0.0-rc.3",
+  "xml2js": "^0.4.19",
+   "fast-xml-parser": "^3.12.17",
+    "cross-env": "^5.0.0",
+ 	"egg-logger": "^1.5.0",
+	  "egg-http-proxy": "^0.1.0",
+	    "cross-env": "^5.0.0",
+    "egg-mysql": "^3.0.0",
+    "egg-scripts": "^2.11.0"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "egg-bin": "^4.11.0",
+    "egg-ci": "^1.11.0",
+    "egg-mock": "^3.21.0",
+    "eslint": "^5.13.0",
+    "eslint-config-egg": "^7.1.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "scripts": {
+    "start": "npm run stop && egg-scripts start --port=9009 --workers=1 --daemon --title=egg-flutter-video --sticky",
+    "stop": "egg-scripts stop --title=egg-flutter-video",
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "ci": {
+    "version": "10"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "ql",
+  "license": "MIT"
+}

@@ -1,0 +1,77 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+
+		{
+			"path": "pages/public/films/index"
+		},
+		{
+			"path": "pages/index/index"
+		},
+		{
+			"path": "pages/public/films/rank"
+		},
+		{
+			"path": "pages/public/search"
+		},
+		{
+			"path": "pages/public/films/detail"
+		},
+
+		{
+			"path": "pages/start"
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "KK视频",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"navigationStyle": "custom"
+
+	}
+	// #ifndef H5
+	,
+	"tabBar": {
+		"color": "#666",
+		"selectedColor": "#FE9132",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/public/films/index",
+				"iconPath": "static/img/tab/icon-tab-home.png",
+				"selectedIconPath": "/static/img/tab/icon-tab-home-select.png",
+				"text": "首页"
+			},
+			// {
+			// 	"pagePath": "pages/public/films/index",
+			// 	"iconPath": "static/img/tab/icon-tab-video.png",
+			// 	"selectedIconPath": "/static/img/tab/icon-tab-video-select.png",
+			// 	"text": "视频"
+			// },
+
+			// {
+			// 	"pagePath": "pages/public/films/rank",
+			// 	"iconPath": "static/img/tab/icon-tab-rank.png",
+			// 	"selectedIconPath": "/static/img/tab/icon-tab-rank-select.png",
+			// 	"text": "排行榜"
+			// },
+
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/img/tab/icon-tab-mine.png",
+				"selectedIconPath": "/static/img/tab/icon-tab-mine-select.png",
+				"text": "我的"
+			}
+		]
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+	// #endif
+
+}

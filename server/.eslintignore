@@ -1,0 +1,8 @@
+
+coverage/
+private/
+run/
+
+public/
+node_modules/
+app/

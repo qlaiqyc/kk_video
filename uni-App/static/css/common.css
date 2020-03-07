@@ -1,0 +1,49 @@
+	
+	* {
+	    margin: 0;
+	    -webkit-tap-highlight-color: transparent;
+		box-sizing: border-box;
+	}
+	
+	.b-b:after{
+	  position: absolute;
+	  z-index: 3;
+	  left: 0;
+	  right: 0;
+	  height: 0;
+	  content: '';
+	  -webkit-transform: scaleY(0.5);
+	          transform: scaleY(0.5);
+	  border-bottom: 1px solid #E4E7ED;
+	}
+	.b-b:after {
+	  bottom: 0;
+	}
+	.nav-head{
+		position: fixed;
+		 
+		width: 100%;
+		z-index: 999;
+	}
+
+	
+	/* #ifdef H5*/
+	.status_bar {
+	     height: 45px;
+	     width: 100%;
+	 }
+	 .status_bar {
+	     display: none;
+	  }
+	/* #endif */
+	
+	
+	/*MP 隐藏 导航条使用自己的导航条*/
+
+	
+ 
+	
+	
+	
+ 
+	
